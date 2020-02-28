@@ -1,7 +1,7 @@
 pipeline {
     agent {
         kubernetes {
-            label 'atmega4808-air-quality-pm-co2-tvoc-monitor-atmel-studio'
+            label 'atmega4808-air-quality-monitor-studio'
 			defaultContainer 'debian'
             yamlFile 'cloudprovider.yml'
         }
@@ -14,8 +14,8 @@ pipeline {
     }
 	
 	environment {		
-		GITHUB_URL ='https://github.com/microchip-pic-avr-examples/atmega4808-air-quality-pm-co2-tvoc-monitor-atmel-studio.git'
-		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/ebe/atmega4808-air-quality-pm-co2-tvoc-monitor-atmel-studio.git'
+		GITHUB_URL ='https://github.com/microchip-pic-avr-examples/atmega4808-air-quality-monitor-studio.git'
+		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/ebe/atmega4808-air-quality-monitor-studio.git'
 		DEPLOY_TOOL_URL = 'https://bitbucket.microchip.com/scm/citd/tool-github-deploy.git'
 		DEPLOY_SCRIPT_DIR = 'tool-github-deploy'
 		DEPLOY_SCRIPT_FILE = 'deploy-source-as-is.sh'
