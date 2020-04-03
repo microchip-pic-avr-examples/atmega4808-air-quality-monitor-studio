@@ -84,7 +84,7 @@ The AVR-IOT WG board has a mikroBUS slot. Click boards are connected to the boar
 
 Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM sensor (SPS30) with the MCU as clicks boards for these sensors are not available. Below table shows pin connections of humidity and PM sensor with mikroBUS connector of proto click.
 
-| SHT31-ARP     | mikroBUS connector of Proto Click | mikroBUS connector of Proto Click  |SHT31-ARP|SHT31-ARP|
+| SHT31-ARP     | mikroBUS connector of Proto Click | mikroBUS connector of Proto Click  |SHT31-ARP|SPS30|
 | :---------: |:----------:|:-----------:|:---------:|:------------:|
 | PIN 1 (Humidity)	| AN 	| PWM|	|			|		
 |           		| RST 	| INT	|PIN 4 (Temperature)	|		|
@@ -147,8 +147,10 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 
 **RELATED DOCUMENTS / APPLICATION NOTES**
 
-+ AN3403 Indoor Air Quality Monitor: Concept and Implementation
++ [AN3403 Indoor Air Quality Monitor: Concept and Implementation](https://www.microchip.com/DS00003403)
 
-+ Indoor Air Quality Monitor UG
++ [Indoor Air Quality Monitor UG](https://www.microchip.com/DS50002966)
 
-+ [AVR IoT Development Board User Guide](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwilwpHvh_PmAhVzzjgGHVTuA3gQFjAAegQIAhAC&url=https%3A%2F%2Fww1.microchip.com%2Fdownloads%2Fen%2FDeviceDoc%2FAVR-IoT-WG-User-Guide-50002809A.pdf&usg=AOvVaw32pobiRIAxZiW5hP6xRkAm)
++ [AN3417 Indoor Air Quality Monitor: Firmware Creation Using Atmel START and MPLAB® Code Configurator (MCC)](https://www.microchip.com/DS00003417)
+
++ [AVR IoT Development Board User Guide](https://www.microchip.com/DS50002809)
