@@ -10,13 +10,13 @@ In this application demonstrator, the AQM system is designed and implemented usi
 
 ![Overall AQM System with Cloud and Webpage](Images/1.jpg)
 
-​The application demo is realized using AVR-IoT WG Development Board and several click boards from MikroElektronika™.
+​The application demo is realized using [AVR-IoT WG Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/AC164160) and several click boards from MikroElektronika™.
 
 In this application, the MCU monitors humidity and temperature along with main airborne contaminants such Particulate Matter (PM2.5), Carbon dioxide (CO2) and Total Volatile Organic Components (TVOC). The MCU processes these acquired readings and calculates the Air quality Index (AQI) from the readings of PM2.5 sensor. The AQI and other acquired air quality parameters are stored on an external EEPROM and displayed on the OLED. If AQM finds internet connectivity, it uploads the AQI and other parameters to the Google Cloud. After that, the MCU enters in the sleep mode and wakes up periodically to monitor the sensors. MCU also wakes up by switch press event and displays the air quality parameters on the OLED display.
 
 ![Block Diagram](Images/2.jpg)
 
-For more details refer to application note AN3403 Indoor Air Quality Monitor: Concept and Implementation.
+For more details refer to application note [AN3403 Indoor Air Quality Monitor: Concept and Implementation](https://www.microchip.com/DS00003403).
 
 
 
