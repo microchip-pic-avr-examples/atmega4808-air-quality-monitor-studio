@@ -60,7 +60,7 @@
 void sps30_start_measurement(void) 
 {
     struct sensirion_shdlc_rx_header header;
-    volatile uint8_t param_buf[] = SPS_SUBCMD_MEASUREMENT_START;
+    uint8_t param_buf[] = SPS_SUBCMD_MEASUREMENT_START;
 
    sensirion_shdlc_xcv(SPS_ADDR, SPS_CMD_START_MEASUREMENT,
                                sizeof(param_buf), param_buf, 0, &header, NULL);
@@ -83,6 +83,7 @@ void sps30_read_measurement(float *measurement)
     uint16_t idx = 0;
     volatile uint32_t *u32_data = (uint32_t *)data;
     uint32_t tmp = 0;
+	float *tmp_add;
 
     sensirion_shdlc_xcv(SPS_ADDR, SPS_CMD_READ_MEASUREMENT, 0, NULL,
                               sizeof(data), &header, (uint8_t *)data);
@@ -90,7 +91,8 @@ void sps30_read_measurement(float *measurement)
     
     ++idx;
     tmp = be32_to_cpu(u32_data[idx]);
-    *measurement =  *(float *)&tmp;
+	tmp_add = (float *)&tmp;
+	*measurement =  *tmp_add;
 
 
 //    idx = 0;

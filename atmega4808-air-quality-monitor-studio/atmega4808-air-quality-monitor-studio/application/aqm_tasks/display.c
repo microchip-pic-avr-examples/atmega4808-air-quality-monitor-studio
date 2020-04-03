@@ -136,7 +136,7 @@ void DisplayOnOLED (void)
 
     //print parameter name 
     OLED_SetScale (2, 1);
-    OLED_PutStringByColumn (0, 0, parameterTable[parameterDisplayCounter].ParameterName);
+    OLED_PutStringByColumn (0, 0, (char *)parameterTable[parameterDisplayCounter].ParameterName);
 
     //print parameter 
     sprintf (dataToBePrint, "%d", *parameterTable[parameterDisplayCounter].Parameter);
@@ -150,7 +150,7 @@ void DisplayOnOLED (void)
     //print parameter unit
     OLED_SetScale (1, 1);
     columnNumber = 90 - (5 * strlen (parameterTable[parameterDisplayCounter].unit)); //to print at the end
-    OLED_PutString (columnNumber, 4, parameterTable[parameterDisplayCounter].unit);
+    OLED_PutString (columnNumber, 4, (char *)parameterTable[parameterDisplayCounter].unit);
 }
 
 /*******************************************************************************

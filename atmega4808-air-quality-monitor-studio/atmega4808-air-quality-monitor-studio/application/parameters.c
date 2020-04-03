@@ -40,17 +40,17 @@ static unsigned long int firstEepromSendAddress = 0x00000000; //first time write
 Paramete_table_t parameterTable[] = {
 
     /*	Index	           Parameter		    Name          Json Format                              unit      */
-	INIT_PARAMETER,       &reserved,            "N",            "N",                                   "N",
+	{INIT_PARAMETER,       &reserved,            "N",            "N",                                   "N"},
 
-    AQI,                  &aqi,                "AQI",         "\"1\u2024"" AQI\"",                     " ",
-    TEMPERATURE,          &temperature,        "Temp",        "\"3\u2024"" T \u00B0""C\"",             "?C", //? for degree
-    HUMIDITY,             &humidity,           "RH",          "\"4\u2024"" RH %\"",                    "%",
-    PM2_5,                &pm2_5,              "PM",          "\"2\u2024"" PM ug\u2215""m\u00B3\"",    "ug/m@", //@ for cube
-    TVOC,                 &tvoc,               "TVOC",        "\"6\u2024"" TVOC ppb\"",                "ppb",
-    CO2,                  &co2,                "CO2",         "\"5\u2024"" CO2 ppm\"",                 "ppm",
+    {AQI,                  &aqi,                "AQI",         "\"1\u2024"" AQI\"",                     " "},
+    {TEMPERATURE,          &temperature,        "Temp",        "\"3\u2024"" T \u00B0""C\"",             "?C"}, //? for degree
+    {HUMIDITY,             &humidity,           "RH",          "\"4\u2024"" RH %\"",                    "%"},
+    {PM2_5,                &pm2_5,              "PM",          "\"2\u2024"" PM ug\u2215""m\u00B3\"",    "ug/m@"}, //@ for cube
+    {TVOC,                 &tvoc,               "TVOC",        "\"6\u2024"" TVOC ppb\"",                "ppb"},
+    {CO2,                  &co2,                "CO2",         "\"5\u2024"" CO2 ppm\"",                 "ppm"},
 
 
-    LAST_PARAMETER,       &reserved,            "N",            "N",                                   "N",
+    {LAST_PARAMETER,       &reserved,            "N",            "N",                                   "N"},
 };
 
 /*******************************************************************************
