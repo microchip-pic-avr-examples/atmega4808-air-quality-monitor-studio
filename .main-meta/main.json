@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.studio.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.studio.project.atmega4808-air-quality-monitor-studio",
+        "version": "1.0.2",
+        "displayName": "Air Quality Monitor using ATmega4808",
+        "projectName": "atmega4808-air-quality-monitor-studio",
+        "shortDescription": "This is the Atmel studio firmware associated with AN3403 Indoor Air Quality Monitor: Concept and Implementation.",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "Studio",
+            "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "Avr-Gcc",
+				"semverRange": "^5.4.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATmega_DFP",
+            "semverRange": "^1.4.351"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.7.391"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,62 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATmega4808",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "START",
             [
-               "Peripherals", ""
+               "Peripherals", "ADC"
             ],
             [
-               "Peripherals", ""
-            ]            			
+               "Peripherals", "USART"
+            ],
+            [
+               "Peripherals", "NVM"
+            ],
+            [
+               "Peripherals", "EVENT SYSTEM"
+            ],
+            [
+               "Peripherals", "CCL"
+            ],
+            [
+               "Peripherals", "RTC"
+            ],
+            [
+               "Peripherals", "PIT"
+            ],
+            [
+               "Peripherals", "SPI"
+            ],
+            [
+               "Peripherals", "I2C"
+            ]
         ],
         "peripherals": [
-            "",""
+            "ADC","UART","NVM","EVENT SYSTEM","CCL","RTC","PIT","SPI","I2C"
         ],
         "keywords": [
-            "",
-            ""			
+            "Sleep Mode",
+            "Low Power Mode",
+            "IoT",
+            "WiFi",
+            "WINC1510",
+            "AVR IoT Board",
+            "Google Cloud",
+            "ATECC608A",
+            "Secure Element",
+            "Sensors",
+            "Curiosity Nano Board",
+            "Analog",
+            "Humidity",
+            "PM",
+            "Temperature",
+            "CO2",
+            "TVOC"
         ],
 		"additionalData": {
 			"longDescription": {
