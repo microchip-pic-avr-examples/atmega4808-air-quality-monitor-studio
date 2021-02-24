@@ -1,64 +1,77 @@
-[![MCHP](https://cldup.com/U0qhLwBijF.png)](https://www.microchip.com)
+[![MCHP](images/microchip.png)](https://www.microchip.com)
 
-**Description**
+# Indoor Air Quality Monitor
+
+## Description
 
 This example demonstrates smart, secure and connected indoor Air Quality Monitor (AQM) using AVR IoT WG board powered by ATmega4808 MCU, secured by ATECC608A security chip and connected by WINC1510 WIFI module.
 
-**Note**
+### Note
 
 Download/Clone the project at root of the directory to avoid build errors due to windows path length limitation.
 
-**INTRODUCTION**
+## Related Documents/Application Notes
+
++ [AN3403 Indoor Air Quality Monitor: Concept and Implementation](https://www.microchip.com/DS00003403)
+
++ [Indoor Air Quality Monitor UG](https://www.microchip.com/DS50002966)
+
++ [AN3417 Indoor Air Quality Monitor: Firmware Creation Using Atmel START and MPLAB® Code Configurator (MCC)](https://www.microchip.com/DS00003417)
+
++ [AVR IoT Development Board User Guide](https://www.microchip.com/DS50002809)
+
+## Introduction
 
 In this application demonstrator, the AQM system is designed and implemented using core independent peripherals (CIPs) and intelligent analog peripherals of the ATmega4808 microcontroller featuring the 8-bit AVR® processor. Microchip’s CryptoAuthentication™ secure element (ATECC608A) and a fully certified Wi-Fi® module (ATWINC1510) are used to securely connect, the smart AQM to Google Cloud IoT Core platform.
 
-![Overall AQM System with Cloud and Webpage](Images/1.jpg)
+![Air Quality Monitor System with Cloud and Webpage](Images/overall_system.jpg)
 
 ​The application demo is realized using [AVR-IoT WG Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/AC164160) and several click boards from MikroElektronika™.
 
 In this application, the MCU monitors humidity and temperature along with main airborne contaminants such Particulate Matter (PM2.5), Carbon dioxide (CO2) and Total Volatile Organic Components (TVOC). The MCU processes these acquired readings and calculates the Air quality Index (AQI) from the readings of PM2.5 sensor. The AQI and other acquired air quality parameters are stored on an external EEPROM and displayed on the OLED. If AQM finds internet connectivity, it uploads the AQI and other parameters to the Google Cloud. After that, the MCU enters in the sleep mode and wakes up periodically to monitor the sensors. MCU also wakes up by switch press event and displays the air quality parameters on the OLED display.
 
-![Block Diagram](Images/2.jpg)
+![Air Quality Monitor Block Diagram](Images/block_diagram.jpg)
 
 For more details refer to application note [AN3403 Indoor Air Quality Monitor: Concept and Implementation](https://www.microchip.com/DS00003403).
 
 
+## Hardware Used
 
-**SUPPORTED EVALUATION KIT**
++ [AVR-IoT WG Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/AC164160)
+ + [ATmega4808](https://www.microchip.com/wwwproducts/en/ATMEGA4808)
+ + [ATWINC1510](https://www.microchip.com/wwwproducts/en/ATwinc1500)
+ + [ATECC608A (pre-provisioned)](https://www.microchip.com/wwwproducts/en/ATECC608A)
+ + TEMT6000 light sensor
+ + [MCP9808 temperature sensor](https://www.microchip.com/wwwproducts/en/en556182)
+ + [MCP73871 Battery Charger](https://www.microchip.com/wwwproducts/en/en536670)
+ + 2x push buttons
+ + 4x LEDs
 
-ATmega4808 AVR IoT WG
++ [Air Quality 3 Click](https://www.mikroe.com/air-quality-3-click)
+ + CCS811 TVOC and eCO2 Sensor
 
-**HARDWARE**
++ [OLED B Click](https://www.mikroe.com/oled-b-click)
 
-+ ATmega4808 AVR IoT WG
-	+ ATmega4808
-	+ ATWINC1510
-	+ ATECC608A (pre-provisioned)
-	+ TEMT6000 light sensor
-	+ MCP9808 temperature sensor
-	+ MCP73871 Battery Charger
-	+ 2x push buttons
-	+ 4x LEDs
++ [EEPROM3 Click](https://www.mikroe.com/eeprom-3-click)
+ + [AT24CM02 2 Mbit EEPROM chip](https://www.microchip.com/wwwproducts/en/AT24CM02)
 
-+ Air Quality 3 Click
-	+ CCS811 TVOC and eCO2 Sensor
++ [SPS30 PM Sensor](https://www.sensirion.com/en/environmental-sensors/particulate-matter-sensors-pm25/)
 
-+ OLED B Click
++ [SHT31-ARP Humidity and Temperature Sensor](https://www.digikey.in/product-detail/en/sensirion-ag/SHT31-ARP-B/1649-1012-1-ND/5872293)
 
-+ EEPROM3 Click
-	+ AT24CM02 2 Mbit EEPROM chip
++ [Proto Click](https://www.mikroe.com/proto-click)
 
-+ SPS30 PM Sensor
++ [Shuttle Click](https://www.mikroe.com/shuttle-click)
 
-+ SHT31 Humidity and Temperature Sensor
++ [mikroBUS Shuttles](https://www.mikroe.com/mikrobus-shuttle)
 
-+ Proto Click
+## Software Tools
 
-+ Shuttle Click
+* [Studio 7 v7.0.2397](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
+* [AVR GCC Compiler v5.4.0](https://www.microchip.com/en-us/development-tools-tools-and-software/gcc-compilers-avr-and-arm)
+* [START v1.7.279](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/atmel-start)
 
-+ mikroBUS Shuttles
-
-**PERIPHRALS INVLOVED**
+## Peripherals Used
 
 + Analog-to-Digital Converter (ADC)
 
@@ -66,23 +79,23 @@ ATmega4808 AVR IoT WG
 
 + Serial Peripheral Interface (SPI)
 
-+ Two Wire Interface (TWI): I2C compatible
++ Two-Wire Interface (TWI): I2C compatible
 
 + Real-Time Counter (RTC)
 
 + Periodic Interrupt Timer (PIT)
 
-+ Sleep Controller
++ Sleep Controller (SLPCTRL)
 
-+ Non Volatile Memory Access Control (NVM)
++ Non Volatile Memory Access Control (NVMCTRL)
 
-+ Event system
++ Event System (EVSYS)
 
 + Configurable Custom Logic (CCL)
 
-**RUNNING THE DEMO**
+## Running the Demo
 
-**Hardware Connection**
+### Hardware Connection
 
 The AVR-IOT WG board has a mikroBUS slot. Click boards are connected to the board using shuttle click, which is a mikroBUS™ socket expansion board, placed over the mikroBUS slot.
 
@@ -92,8 +105,8 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 | :---------: |:----------:|:-----------:|:---------:|:------------:|
 | PIN 1 (Humidity)	| AN 	| PWM|	|			|		
 |           		| RST 	| INT	|PIN 4 (Temperature)	|		|
-|          		| CS 	|RX 	|			|PIN 3 (**TX**)|
-|          		| SCK 	| TX 	|			|PIN 2 (**RX**)|
+|          		| CS 	|RX 	|			|PIN 3 (TX)|
+|          		| SCK 	| TX 	|			|PIN 2 (RX)|
 |           		| MISO 	| SCL 	|			|		|
 |          		| MOSI 	| SDA	|			|		|
 |PIN 5 (VDD)      	| 3.3V 	| 5V 	|			|PIN 1 (5V)	|
@@ -102,7 +115,7 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 
 
 
-**Firmware generation and Programming**
+### Firmware generation and Programming
 
 1. Download the example.
 
@@ -113,7 +126,7 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 4. Build the application and program the device. Press Start without debugging or use  CTRL+ALT+F5 hotkeys to run the application for programming the device.
 
 
-**Operation**
+## Operation
 
 1. Once programming is completed, “AQM” will be displayed on the OLED.
 
@@ -137,7 +150,7 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 
 8. Check the LEDs indication for Wi-Fi connection (Blue) and cloud connection (Green). Yellow LED will flash during data upload to the google cloud.
 
-**Wi-Fi Configuration**
+## Wi-Fi Configuration
 
 1. Once plugged into to the PC, the board should also appear as a Removable Storage Device on the host PC. Double click the “CURIOSITY” drive to open it. Double click on the CLICK-ME.HTM file to go to the dedicated webpage.
 
@@ -148,13 +161,3 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 4. From the WIFI.CFG’s download location, drag and drop the file to the CURIOSITY drive to update the Wi-Fi credentials of the board. The Blue LED will light up to show a successful connection.
 
 5. Once after successful connection webpage starts showing the air quality sensor data.
-
-**RELATED DOCUMENTS / APPLICATION NOTES**
-
-+ [AN3403 Indoor Air Quality Monitor: Concept and Implementation](https://www.microchip.com/DS00003403)
-
-+ [Indoor Air Quality Monitor UG](https://www.microchip.com/DS50002966)
-
-+ [AN3417 Indoor Air Quality Monitor: Firmware Creation Using Atmel START and MPLAB® Code Configurator (MCC)](https://www.microchip.com/DS00003417)
-
-+ [AVR IoT Development Board User Guide](https://www.microchip.com/DS50002809)

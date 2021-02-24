@@ -4,17 +4,17 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.atmega4808-air-quality-monitor-studio",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "displayName": "Air Quality Monitor using ATmega4808",
         "projectName": "atmega4808-air-quality-monitor-studio",
         "shortDescription": "This is the Atmel studio firmware associated with AN3403 Indoor Air Quality Monitor: Concept and Implementation.",
         "ide": {
-            "name": "Studio",
+            "name": "STUDIO",
             "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "Avr-Gcc",
+				"name": "AVR GCC",
 				"semverRange": "^5.4.0"
 			}
 		],
@@ -32,62 +32,62 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "ATmega4808",
+                "name": "ATMEGA4808",
                 "versionRange": "*"
             }
         },
         "author": "Microchip",
         "subcategories": [
-            "START",
-            [
-               "Peripherals", "ADC"
-            ],
-            [
-               "Peripherals", "USART"
-            ],
-            [
-               "Peripherals", "NVM"
-            ],
-            [
-               "Peripherals", "EVENT SYSTEM"
-            ],
-            [
-               "Peripherals", "CCL"
-            ],
-            [
-               "Peripherals", "RTC"
-            ],
-            [
-               "Peripherals", "PIT"
-            ],
-            [
-               "Peripherals", "SPI"
-            ],
-            [
-               "Peripherals", "I2C"
-            ]
+          "Internet of Things (IoT)",
+          "Sensor Nodes",
+          "START",
+          [
+             "Peripherals", "ADC"
+          ],
+          [
+             "Peripherals", "USART"
+          ],
+          [
+             "Peripherals", "NVMCTRL"
+          ],
+          [
+             "Peripherals", "EVSYS"
+          ],
+          [
+             "Peripherals", "CCL"
+          ],
+          [
+             "Peripherals", "RTC"
+          ],
+          [
+             "Peripherals", "PIT"
+          ],
+          [
+             "Peripherals", "SPI"
+          ],
+          [
+             "Peripherals", "SLPCTRL"
+          ],
+          [
+             "Peripherals", "TWI"
+          ]
         ],
         "peripherals": [
-            "ADC","UART","NVM","EVENT SYSTEM","CCL","RTC","PIT","SPI","I2C"
+            "ADC","USART","NVMCTRL","EVSYS","CCL","RTC","PIT","SPI","TWI","SLPCTRL"
         ],
         "keywords": [
-            "Sleep Mode",
-            "Low Power Mode",
-            "IoT",
-            "WiFi",
-            "WINC1510",
-            "AVR IoT Board",
-            "Google Cloud",
-            "ATECC608A",
-            "Secure Element",
-            "Sensors",
-            "Curiosity Nano Board",
-            "Analog",
-            "Humidity",
-            "PM",
-            "Temperature",
-            "CO2",
-            "TVOC"
+          "IoT",
+          "WiFi",
+          "WINC1510",
+          "AVR IoT",
+          "Google Cloud",
+          "ATECC608A",
+          "Sensors",
+          "Humidity",
+          "PM",
+          "Temperature",
+          "CO2",
+          "TVOC"
         ],
 		"additionalData": {
 			"longDescription": {
