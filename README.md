@@ -38,22 +38,22 @@ For more details refer to application note [AN3403 Indoor Air Quality Monitor: C
 ## Hardware Used
 
 + [AVR-IoT WG Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/AC164160)
- + [ATmega4808](https://www.microchip.com/wwwproducts/en/ATMEGA4808)
- + [ATWINC1510](https://www.microchip.com/wwwproducts/en/ATwinc1500)
- + [ATECC608A (pre-provisioned)](https://www.microchip.com/wwwproducts/en/ATECC608A)
- + TEMT6000 light sensor
- + [MCP9808 temperature sensor](https://www.microchip.com/wwwproducts/en/en556182)
- + [MCP73871 Battery Charger](https://www.microchip.com/wwwproducts/en/en536670)
- + 2x push buttons
- + 4x LEDs
+  + [ATmega4808](https://www.microchip.com/wwwproducts/en/ATMEGA4808)
+  + [ATWINC1510](https://www.microchip.com/wwwproducts/en/ATwinc1500)
+  + [ATECC608A (pre-provisioned)](https://www.microchip.com/wwwproducts/en/ATECC608A)
+  + TEMT6000 light sensor
+  + [MCP9808 temperature sensor](https://www.microchip.com/wwwproducts/en/en556182)
+  + [MCP73871 Battery Charger](https://www.microchip.com/wwwproducts/en/en536670)
+  + 2x push buttons
+  + 4x LEDs
 
 + [Air Quality 3 Click](https://www.mikroe.com/air-quality-3-click)
- + CCS811 TVOC and eCO2 Sensor
+  + CCS811 TVOC and eCO2 Sensor
 
 + [OLED B Click](https://www.mikroe.com/oled-b-click)
 
 + [EEPROM3 Click](https://www.mikroe.com/eeprom-3-click)
- + [AT24CM02 2 Mbit EEPROM chip](https://www.microchip.com/wwwproducts/en/AT24CM02)
+  + [AT24CM02 2 Mbit EEPROM chip](https://www.microchip.com/wwwproducts/en/AT24CM02)
 
 + [SPS30 PM Sensor](https://www.sensirion.com/en/environmental-sensors/particulate-matter-sensors-pm25/)
 
