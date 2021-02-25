@@ -1,4 +1,4 @@
-[![MCHP](images/microchip.png)](https://www.microchip.com)
+[![MCHP](Images/microchip.png)](https://www.microchip.com)
 
 # Indoor Air Quality Monitor
 

@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.atmega4808-air-quality-monitor-studio",
-        "version": "1.0.3",
-        "displayName": "Air Quality Monitor using ATmega4808",
+        "version": "1.0.4",
+        "displayName": "Indoor Air Quality Monitor",
         "projectName": "atmega4808-air-quality-monitor-studio",
         "shortDescription": "This is the Atmel studio firmware associated with AN3403 Indoor Air Quality Monitor: Concept and Implementation.",
         "ide": {
