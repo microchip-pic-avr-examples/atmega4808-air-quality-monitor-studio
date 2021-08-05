@@ -67,31 +67,9 @@ For more details refer to application note [AN3403 Indoor Air Quality Monitor: C
 
 ## Software Tools
 
-* [Studio 7 v7.0.2397](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
-* [AVR GCC Compiler v5.4.0](https://www.microchip.com/en-us/development-tools-tools-and-software/gcc-compilers-avr-and-arm)
-* [START v1.7.279](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/atmel-start)
-
-## Peripherals Used
-
-+ Analog-to-Digital Converter (ADC)
-
-+ Universal Synchronous and Asynchronous Receiver and Transmitter (USART)
-
-+ Serial Peripheral Interface (SPI)
-
-+ Two-Wire Interface (TWI): I2C compatible
-
-+ Real-Time Counter (RTC)
-
-+ Periodic Interrupt Timer (PIT)
-
-+ Sleep Controller (SLPCTRL)
-
-+ Non Volatile Memory Access Control (NVMCTRL)
-
-+ Event System (EVSYS)
-
-+ Configurable Custom Logic (CCL)
+* Microchip Studio for AVR® and SAM Devices [v7.0.2397 or newer](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
+* AVR GCC Compiler [v5.4.0 or newer](https://www.microchip.com/en-us/development-tools-tools-and-software/gcc-compilers-avr-and-arm)
+* START [v1.7.279 or newer](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/atmel-start)
 
 ## Running the Demo
 
@@ -119,7 +97,7 @@ Proto click is used to interface Humidity -Temperature sensor (SHT31-ARP) and PM
 
 1. Download the example.
 
-2. Open the example  into Atmel Studio 7 by clicking on the .atsln file.
+2. Open the example  into Microchip Studio by clicking on the .atsln file.
 
 3. Connect AVR IoT WG board to PC using the micro USB cable.
 
