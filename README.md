@@ -6,6 +6,8 @@
 
 This example demonstrates smart, secure and connected indoor Air Quality Monitor (AQM) using AVR IoT WG board powered by ATmega4808 MCU, secured by ATECC608A security chip and connected by WINC1510 WIFI module.
 
+This is a document changed by Abhiram
+
 ### Note
 
 Download/Clone the project at root of the directory to avoid build errors due to windows path length limitation.
