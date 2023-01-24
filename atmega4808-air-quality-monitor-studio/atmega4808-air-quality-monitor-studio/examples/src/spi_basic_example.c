@@ -24,13 +24,14 @@
     THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
  *
  */
-
+//CHANGE BY ABHIRAM
 #include <stdio.h>
 #include <string.h>
 #include <atmel_start.h>
 #include <spi_basic_example.h>
 #include <spi_basic.h>
 #include <atomic.h>
+
 
 static uint8_t buffer[16] = "data";
 
